@@ -31,7 +31,7 @@ export default function HomePage() {
               </div>
             </motion.div>
           </Link>
-          <Link to="/game">
+          <Link to="/games">
             <motion.div
               className="quarter-section"
               whileHover={{
