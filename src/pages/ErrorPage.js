@@ -1,0 +1,11 @@
+import MainNavigation from "../components/MainNavigation";
+
+export default function ErrorPage() {
+  return (
+    <>
+      <MainNavigation />
+      <h1>An error has occurred!</h1>
+      <p>Could not find this page</p>
+    </>
+  );
+}

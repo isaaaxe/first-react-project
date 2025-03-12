@@ -1,0 +1,330 @@
+:root {
+  --bg-color: #f4ede1;
+  --primary-color: #c8a27c;
+  --secondary-color: #e0c3a5;
+  --accent-color: #a67b5b;
+  --text-color: #5a4033;
+  --sidebar-bg: #e7d8c9;
+  --nav-bg: #d6b79e;
+}
+
+.red-box {
+  border-color: red;
+  border-style: solid;
+  border-width: 1px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+main {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.sideBySide {
+  margin: 0;
+  width: 50%;
+  height: 40%;
+  display: inline-block;
+}
+
+.sideBySide a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.home-page {
+  font-size: x-large;
+  margin-top: 50px;
+}
+
+.home-page a {
+  color: var(--text-color);
+  text-decoration: none; /* no underline */
+}
+
+.home-page-sections {
+  margin-top: 5%;
+}
+
+.quarter-section {
+  margin: 20px;
+
+  height: 100px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.quarter-section p {
+  margin: 15px;
+}
+/* Navigation Bar */
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: var(--nav-bg);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-right: 20px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.navbar ul li button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: var(--sidebar-bg);
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding-top: 70px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+  display: block;
+}
+
+/* Content Styling */
+.main-content {
+  margin-top: 70px;
+  padding: 20px;
+}
+
+#welcome {
+  font-size: large;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 20%;
+}
+
+/* Menu Modal */
+.menu-modal {
+  width: 210px;
+  height: calc(100vh - 60px);
+  background-color: var(--sidebar-bg);
+  position: fixed;
+  left: 0;
+  top: 60px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border: none;
+  z-index: 6;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+}
+
+.menu-modal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-modal ul li {
+  padding: 15px;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.menu-modal ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+  display: block;
+}
+
+/* Circle */
+.circleBase {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: #a67b5b;
+  vertical-align: middle;
+  line-height: 50px;
+  font-family: "ＭＳ Ｐゴシック";
+  position: absolute;
+}
+
+.targetImg {
+  height: 100px;
+  width: 100px;
+}
+
+/* Game */
+.game-intro {
+  margin-top: 10%;
+  font-size: x-large;
+}
+
+.game-board {
+  position: relative;
+
+  width: 99vw;
+  height: 80vh;
+}
+
+.game-header {
+  text-align: end;
+}
+
+.game-header button {
+  margin-left: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.25);
+  color: #5a4033;
+}
+
+.game-ui {
+  display: inline-block;
+}
+
+.game-ui p {
+  font-size: large;
+}
+
+.game-score {
+  font-size: xx-large;
+  font-weight: 800;
+}
+
+.game-results {
+  padding-top: 15%;
+  position: relative;
+  height: 60vh;
+  font-size: xx-large;
+  font-weight: 800;
+}
+
+/* Education Page */
+.education-section {
+  margin: 100px 50px 50px 50px;
+}
+
+.image-ed {
+  width: 50%;
+}
+
+.education-text {
+  text-align: center;
+  font-size: larger;
+  line-height: 2;
+}
+
+/* Ippt */
+.ippt-score {
+  font-size: x-large;
+}
+
+/* Slider */
+
+.slider-container {
+  margin: 40px auto 40px auto;
+  text-align: center;
+  background: #e3d5ca;
+  width: 50%;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: #c9a89a;
+  outline: none;
+  transition: background 0.3s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #8d6e63;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: #8d6e63;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.value {
+  font-size: 18px;
+  font-weight: bold;
+  color: #5d4037;
+  margin-top: 10px;
+}
