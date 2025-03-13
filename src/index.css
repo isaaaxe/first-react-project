@@ -31,11 +31,21 @@ body {
   color: var(--text-color);
 }
 
-.sideBySide {
+/* .sideBySide {
   margin: 0;
   width: 50%;
   height: 40%;
   display: inline-block;
+} */
+
+/* changed from inline-block display to flex */
+
+.sideBySide {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 50px;
+  font-size: 1.5rem;
 }
 
 .sideBySide a {
@@ -57,13 +67,22 @@ body {
   margin-top: 5%;
 }
 
-.quarter-section {
+/* .quarter-section {
   margin: 20px;
 
   height: 100px;
   border-radius: 5px;
   background-color: white;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+} */
+
+.quarter-section {
+  flex: 1;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 0 10px;
+  max-width: 400px;
 }
 
 .quarter-section p {

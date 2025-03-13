@@ -67,7 +67,7 @@ export default function HomePage() {
               </div>
             </motion.div>
           </Link>
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+          <a href="https://www.youtube.com/watch?v=kLiuYPR4YpA">
             <motion.div
               className="quarter-section"
               whileHover={{
@@ -80,7 +80,7 @@ export default function HomePage() {
                 <strong>Coming soon!</strong>
               </p>
               <div>
-                <p>Placeholder for a 4th page idea</p>
+                <p>Hoping to find inspiration and implement soon!</p>
               </div>
             </motion.div>
           </a>

@@ -5,8 +5,8 @@ export default function EducationPage() {
   return (
     <>
       <h1>Education</h1>
-      <section className="education-section">
-        <div className="sideBySide education-text ">
+      <section className="sideBySide">
+        <div className="education-text">
           <p>
             Studied in Raffles Institution from 2017-2022.
             <br />
@@ -20,12 +20,12 @@ export default function EducationPage() {
             <br />
           </p>
         </div>
-        <div className="sideBySide">
+        <div>
           <img src={jcImg} alt="jc class" className="image-ed" />
         </div>
       </section>
-      <section className="education-section">
-        <div className="sideBySide">
+      <section className="sideBySide">
+        <div>
           <img src={armyMedicImg} alt="amry medics" className="image-ed" />
         </div>
         <div className="education-text sideBySide">
